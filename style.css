@@ -1,3 +1,124 @@
-#root {
-  color: red;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+#controls-bar {
+  background: #222;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#controls-bar input,
+#controls-bar select,
+#controls-bar button {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+#controls-bar input {
+  flex: 1;
+  min-width: 180px;
+}
+
+#controls-bar select {
+  background: #fff;
+}
+
+#controls-bar button {
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#controls-bar button:hover {
+  background: #0056b3;
+}
+
+#search-count {
+  color: #fff;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.shows-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.show-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.show-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.show-card .show-title {
+  margin: 10px;
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.show-card .show-title:hover {
+  text-decoration: underline;
+}
+
+.show-summary {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.show-meta {
+  padding: 10px;
+  font-size: 12px;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+.episode-card {
+  background: #fff;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.episode-card img {
+  max-width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+
+.episode-card h3 {
+  margin-top: 0;
+}
+
+.episode-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.episode-card a:hover {
+  text-decoration: underline;
 }
